@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-background.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -15,29 +18,28 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Yến Nest
+          {t('hero.title')}
         </h1>
         
         <div className="mb-8">
           <p className="text-2xl md:text-3xl font-semibold mb-4 text-yellow-100">
-            "Thượng phẩm thiên nhiên – Sức khỏe vẹn toàn"
+            "{t('hero.slogan')}"
           </p>
           <p className="text-lg md:text-xl text-brown-100 max-w-2xl mx-auto leading-relaxed">
-            Khám phá tinh hoa của thiên nhiên với những sản phẩm yến sào cao cấp, 
-            mang đến sức khỏe và sắc đẹp cho cả gia đình.
+            {t('hero.description')}
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="premium" size="xl" className="text-lg px-8">
-            Khám Phá Sản Phẩm
+            {t('hero.explore')}
           </Button>
           <Button 
             variant="outline" 
             size="xl" 
             className="text-lg px-8 border-white text-white hover:bg-white hover:text-brown-800"
           >
-            Tìm Hiểu Thêm
+            {t('hero.learn')}
           </Button>
         </div>
       </div>

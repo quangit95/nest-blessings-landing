@@ -1,6 +1,9 @@
 import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Footer = () => {
+  const { t } = useLanguage();
+  
   return (
     <footer id="contact" className="bg-brown-800 text-white">
       <div className="container mx-auto px-4 py-16">
@@ -15,14 +18,13 @@ const Footer = () => {
             </div>
             
             <p className="text-brown-200 mb-6 leading-relaxed max-w-md">
-              Chuyên cung cấp các sản phẩm yến sào cao cấp, được khai thác và chế biến 
-              theo quy trình khép kín, đảm bảo chất lượng và an toàn cho người tiêu dùng.
+              {t('footer.description')}
             </p>
 
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-brown-300" />
-                <span className="text-brown-200">123 Đường Nguyễn Văn Linh, Quận 7, TP.HCM</span>
+                <span className="text-brown-200">{t('footer.address')}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brown-300" />
@@ -37,26 +39,26 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Liên Kết Nhanh</h3>
+            <h3 className="text-xl font-bold mb-6">{t('footer.quicklinks')}</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#home" className="text-brown-200 hover:text-white transition-colors">
-                  Trang Chủ
+                  {t('nav.home')}
                 </a>
               </li>
               <li>
                 <a href="#introduction" className="text-brown-200 hover:text-white transition-colors">
-                  Giới Thiệu
+                  {t('nav.introduction')}
                 </a>
               </li>
               <li>
                 <a href="#products" className="text-brown-200 hover:text-white transition-colors">
-                  Sản Phẩm
+                  {t('nav.products')}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-brown-200 hover:text-white transition-colors">
-                  Liên Hệ
+                  {t('nav.contact')}
                 </a>
               </li>
             </ul>
@@ -64,26 +66,26 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h3 className="text-xl font-bold mb-6">Hỗ Trợ</h3>
+            <h3 className="text-xl font-bold mb-6">{t('footer.support')}</h3>
             <ul className="space-y-3">
               <li>
                 <a href="#" className="text-brown-200 hover:text-white transition-colors">
-                  Chính Sách Bảo Hành
+                  {t('footer.warranty')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-brown-200 hover:text-white transition-colors">
-                  Hướng Dẫn Sử Dụng
+                  {t('footer.guide')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-brown-200 hover:text-white transition-colors">
-                  Chính Sách Đổi Trả
+                  {t('footer.return')}
                 </a>
               </li>
               <li>
                 <a href="#" className="text-brown-200 hover:text-white transition-colors">
-                  FAQ
+                  {t('footer.faq')}
                 </a>
               </li>
             </ul>
@@ -115,9 +117,9 @@ const Footer = () => {
             </div>
 
             <div className="text-brown-300 text-center md:text-right">
-              <p>&copy; 2024 Yến Nest. Tất cả quyền được bảo lưu.</p>
+              <p>{t('footer.copyright')}</p>
               <p className="text-sm mt-1">
-                Website được thiết kế và phát triển bởi Yến Nest Team
+                {t('footer.dev')}
               </p>
             </div>
           </div>

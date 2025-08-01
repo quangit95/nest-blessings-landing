@@ -1,41 +1,44 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
 import premiumImage from "@/assets/bird-nest-premium.jpg";
 import soupImage from "@/assets/bird-nest-soup.jpg";
 import driedImage from "@/assets/bird-nest-dried.jpg";
 import essenceImage from "@/assets/bird-nest-essence.jpg";
 
 const Products = () => {
+  const { t } = useLanguage();
+  
   const products = [
     {
       id: 1,
-      name: "Yến Sào Cao Cấp",
+      nameKey: "products.premium.name",
+      descKey: "products.premium.desc",
       image: premiumImage,
-      description: "Yến sào nguyên chất được chọn lọc kỹ càng, giàu dinh dưỡng và khoáng chất tự nhiên.",
       price: "2.500.000 VNĐ",
       originalPrice: "3.000.000 VNĐ"
     },
     {
       id: 2,
-      name: "Súp Yến Sào Truyền Thống",
+      nameKey: "products.soup.name",
+      descKey: "products.soup.desc",
       image: soupImage,
-      description: "Súp yến sào nấu sẵn theo công thức truyền thống, tiện lợi và giữ nguyên hương vị.",
       price: "850.000 VNĐ",
       originalPrice: "1.000.000 VNĐ"
     },
     {
       id: 3,
-      name: "Yến Sào Khô Tinh Chế",
+      nameKey: "products.dried.name",
+      descKey: "products.dried.desc",
       image: driedImage,
-      description: "Yến sào khô được sấy bằng công nghệ hiện đại, bảo quản được lâu và dễ chế biến.",
       price: "1.800.000 VNĐ",
       originalPrice: "2.200.000 VNĐ"
     },
     {
       id: 4,
-      name: "Tinh Chất Yến Sào",
+      nameKey: "products.essence.name",
+      descKey: "products.essence.desc",
       image: essenceImage,
-      description: "Tinh chất yến sào cô đặc, dễ hấp thụ và mang lại hiệu quả tốt nhất cho sức khỏe.",
       price: "1.200.000 VNĐ",
       originalPrice: "1.500.000 VNĐ"
     }
@@ -46,11 +49,10 @@ const Products = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brown-800 mb-6">
-            Sản Phẩm Đặc Biệt
+            {t('products.title')}
           </h2>
           <p className="text-xl text-brown-600 max-w-3xl mx-auto leading-relaxed">
-            Chúng tôi tự hào mang đến những sản phẩm yến sào chất lượng cao, 
-            được chế biến theo quy trình khép kín và kiểm định nghiêm ngặt.
+            {t('products.subtitle')}
           </p>
         </div>
 
@@ -64,21 +66,21 @@ const Products = () => {
                 <div className="relative overflow-hidden rounded-t-lg">
                   <img
                     src={product.image}
-                    alt={product.name}
+                    alt={t(product.nameKey)}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-brown-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    Bán Chạy
+                    {t('products.bestseller') || 'Bán Chạy'}
                   </div>
                 </div>
               </CardHeader>
               
               <CardContent className="p-6">
                 <CardTitle className="text-xl font-bold text-brown-800 mb-3">
-                  {product.name}
+                  {t(product.nameKey)}
                 </CardTitle>
                 <CardDescription className="text-brown-600 mb-4 leading-relaxed">
-                  {product.description}
+                  {t(product.descKey)}
                 </CardDescription>
                 
                 <div className="flex items-center space-x-2 mb-4">
@@ -93,7 +95,7 @@ const Products = () => {
 
               <CardFooter className="p-6 pt-0">
                 <Button variant="buy" className="w-full" size="lg">
-                  Mua Ngay
+                  {t('products.buynow')}
                 </Button>
               </CardFooter>
             </Card>

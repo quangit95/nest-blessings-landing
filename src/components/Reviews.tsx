@@ -1,31 +1,34 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Star } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Reviews = () => {
+  const { t } = useLanguage();
+  
   const reviews = [
     {
       id: 1,
-      name: "Chị Mai Lan",
-      location: "TP. Hồ Chí Minh",
+      nameKey: "reviews.customer1",
+      locationKey: "reviews.location1",
+      contentKey: "reviews.review1",
       rating: 5,
-      content: "Sản phẩm yến sào chất lượng tuyệt vời! Tôi đã sử dụng được 3 tháng và thấy sức khỏe cải thiện rõ rệt. Da dẻ mịn màng hơn và ngủ ngon hơn nhiều.",
-      avatar: "ML"
+      avatar: "LA"
     },
     {
       id: 2,
-      name: "Anh Tuấn Minh",
-      location: "Hà Nội",
+      nameKey: "reviews.customer2",
+      locationKey: "reviews.location2",
+      contentKey: "reviews.review2",
       rating: 5,
-      content: "Mua yến sào cho mẹ già sử dụng, mẹ rất hài lòng. Đóng gói cẩn thận, giao hàng nhanh chóng. Sẽ tiếp tục ủng hộ cửa hàng!",
-      avatar: "TM"
+      avatar: "MT"
     },
     {
       id: 3,
-      name: "Cô Phương Anh",
-      location: "Đà Nẵng",
+      nameKey: "reviews.customer3",
+      locationKey: "reviews.location3",
+      contentKey: "reviews.review3",
       rating: 5,
-      content: "Tinh chất yến sào rất tiện lợi, dễ sử dụng. Con nhỏ ốm dậy rất nhanh kể từ khi uống. Giá cả hợp lý so với chất lượng nhận được.",
-      avatar: "PA"
+      avatar: "TH"
     }
   ];
 
@@ -34,10 +37,10 @@ const Reviews = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-brown-800 mb-6">
-            Khách Hàng Nói Gì
+            {t('reviews.title')}
           </h2>
           <p className="text-xl text-brown-600 max-w-3xl mx-auto">
-            Hàng nghìn khách hàng đã tin tựa và lựa chọn sản phẩm của chúng tôi
+            {t('reviews.subtitle')}
           </p>
         </div>
 
@@ -60,7 +63,7 @@ const Reviews = () => {
 
                 {/* Review Content */}
                 <blockquote className="text-brown-700 text-center leading-relaxed mb-6 italic">
-                  "{review.content}"
+                  "{t(review.contentKey)}"
                 </blockquote>
 
                 {/* Customer Info */}
@@ -72,10 +75,10 @@ const Reviews = () => {
                   </div>
                   <div className="text-center">
                     <div className="font-semibold text-brown-800">
-                      {review.name}
+                      {t(review.nameKey)}
                     </div>
                     <div className="text-brown-500 text-sm">
-                      {review.location}
+                      {t(review.locationKey)}
                     </div>
                   </div>
                 </div>

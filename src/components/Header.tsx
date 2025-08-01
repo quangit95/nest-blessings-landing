@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   const menuItems = [
-    { name: "Trang Chủ", href: "#home" },
-    { name: "Giới Thiệu", href: "#introduction" },
-    { name: "Sản Phẩm", href: "#products" },
-    { name: "Liên Hệ", href: "#contact" }
+    { name: t('nav.home'), href: "#home" },
+    { name: t('nav.introduction'), href: "#introduction" },
+    { name: t('nav.products'), href: "#products" },
+    { name: t('nav.contact'), href: "#contact" }
   ];
 
   return (
@@ -37,10 +40,11 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          {/* CTA Button & Language Switcher */}
+          <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <Button variant="premium" size="lg">
-              Đặt Hàng Ngay
+              {t('nav.cta')}
             </Button>
           </div>
 
@@ -67,8 +71,11 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+              <div className="pt-2">
+                <LanguageSwitcher />
+              </div>
               <Button variant="premium" size="lg" className="mt-4">
-                Đặt Hàng Ngay
+                {t('nav.cta')}
               </Button>
             </nav>
           </div>
