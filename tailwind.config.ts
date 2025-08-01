@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				brown: {
+					50: 'hsl(var(--brown-50))',
+					100: 'hsl(var(--brown-100))',
+					200: 'hsl(var(--brown-200))',
+					300: 'hsl(var(--brown-300))',
+					400: 'hsl(var(--brown-400))',
+					500: 'hsl(var(--brown-500))',
+					600: 'hsl(var(--brown-600))',
+					700: 'hsl(var(--brown-700))',
+					800: 'hsl(var(--brown-800))',
+					900: 'hsl(var(--brown-900))',
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
