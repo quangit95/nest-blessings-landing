@@ -18,7 +18,7 @@ const translations = {
     'nav.cta': 'Liên Hệ Ngay',
     
     // Hero
-    'hero.title': 'Yến Nest',
+    'hero.title': 'Yến Sào Hương Liên',
     'hero.slogan': 'Thượng phẩm thiên nhiên – Sức khỏe vẹn toàn',
     'hero.description': 'Khám phá bộ sưu tập yến sào cao cấp được chế biến từ những tổ yến tự nhiên chất lượng nhất. Mang đến cho bạn nguồn dinh dưỡng quý giá cho sức khỏe và sắc đẹp.',
     'hero.explore': 'Khám Phá Sản Phẩm',
@@ -52,7 +52,7 @@ const translations = {
     
     // Footer
     'footer.description': 'Chuyên cung cấp các sản phẩm yến sào cao cấp, chất lượng nhất tại Việt Nam. Cam kết mang đến những sản phẩm tự nhiên, an toàn cho sức khỏe.',
-    'footer.address': '123 Đường ABC, Quận 1, TP. Hồ Chí Minh',
+    'footer.address': 'Lô 7LK39, Đ. Số 2 Đường Phong Châu, KĐT Mỹ Gia, Phường Nam Nha Trang, Khánh Hòa',
     'footer.quicklinks': 'Liên Kết Nhanh',
     'footer.support': 'Hỗ Trợ',
     'footer.warranty': 'Chính Sách Bảo Hành',
@@ -60,7 +60,7 @@ const translations = {
     'footer.return': 'Chính Sách Đổi Trả',
     'footer.faq': 'Câu Hỏi Thường Gặp',
     'footer.social': 'Theo Dõi Chúng Tôi',
-    'footer.copyright': '© 2024 Yến Nest. Tất cả quyền được bảo lưu.',
+    'footer.copyright': '© 2024 Yến Sào Hương Liên. Tất cả quyền được bảo lưu.',
     'footer.dev': 'Website được phát triển bởi Lovable'
   },
   en: {
@@ -106,7 +106,7 @@ const translations = {
     
     // Footer
     'footer.description': 'Specializing in providing premium, highest quality bird\'s nest products in Vietnam. Committed to bringing natural, health-safe products.',
-    'footer.address': '123 ABC Street, District 1, Ho Chi Minh City',
+    'footer.address': 'Lô 7LK39, Đ. Số 2 Đường Phong Châu, KĐT Mỹ Gia, Phường Nam Nha Trang, Khánh Hòa',
     'footer.quicklinks': 'Quick Links',
     'footer.support': 'Support',
     'footer.warranty': 'Warranty Policy',

@@ -12,9 +12,10 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-brown-400 to-brown-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">YN</span>
+                <span className="text-white font-bold text-xl" >YN</span>
               </div>
-              <span className="text-2xl font-bold">Yến Nest</span>
+              
+              <span className="text-2xl font-bold">Yến Sào Hương Liên</span>
             </div>
             
             <p className="text-brown-200 mb-6 leading-relaxed max-w-md">
@@ -24,15 +25,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <MapPin className="w-5 h-5 text-brown-300" />
-                <span className="text-brown-200">{t('footer.address')}</span>
+                <span className="text-brown-00">{t('footer.address')}</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brown-300" />
-                <span className="text-brown-200">0901 234 567</span>
+                <span className="text-brown-200">0783 409 011</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-brown-300" />
-                <span className="text-brown-200">info@yennest.vn</span>
+                <span className="text-brown-200">yensaohuongliennhatrang@gmail.com</span>
               </div>
             </div>
           </div>

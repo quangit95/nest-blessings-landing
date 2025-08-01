@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 const Index = () => {
   useEffect(() => {
     // SEO meta tags
-    document.title = "Yến Nest - Thượng phẩm thiên nhiên, Sức khỏe vẹn toàn";
+    document.title = "Yến Sào Hương Liên - Thượng phẩm thiên nhiên, Sức khỏe vẹn toàn";
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -18,12 +18,12 @@ const Index = () => {
 
     const metaKeywords = document.createElement('meta');
     metaKeywords.name = 'keywords';
-    metaKeywords.content = 'yến sào, bird nest, yến sào cao cấp, tinh chất yến sào, súp yến sào, sức khỏe, dinh dưỡng, yến nest';
+    metaKeywords.content = 'yến sào, bird nest, yến sào cao cấp, tinh chất yến sào, súp yến sào, sức khỏe, dinh dưỡng, Yến Sào Hương Liên';
     document.head.appendChild(metaKeywords);
 
     const metaOgTitle = document.createElement('meta');
     metaOgTitle.setAttribute('property', 'og:title');
-    metaOgTitle.content = 'Yến Nest - Thượng phẩm thiên nhiên, Sức khỏe vẹn toàn';
+    metaOgTitle.content = 'Yến Sào Hương Liên - Thượng phẩm thiên nhiên, Sức khỏe vẹn toàn';
     document.head.appendChild(metaOgTitle);
 
     return () => {

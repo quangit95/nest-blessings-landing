@@ -24,7 +24,7 @@ const Header = () => {
             <div className="w-10 h-10 bg-gradient-to-br from-brown-500 to-brown-600 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">YN</span>
             </div>
-            <span className="text-xl font-bold text-brown-800">Yến Nest</span>
+            <span className="text-xl font-bold text-brown-800">Yến Sào Hương Liên</span>
           </div>
 
           {/* Desktop Menu */}
