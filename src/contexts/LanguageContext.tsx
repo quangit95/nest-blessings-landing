@@ -50,6 +50,20 @@ const translations = {
     'reviews.location2': 'TP. Hồ Chí Minh',
     'reviews.location3': 'Đà Nẵng',
     
+    // Introduction
+    'intro.title': 'Về Yến Sào Hương Liên',
+    'intro.subtitle': '14 năm kinh nghiệm, sản phẩm yến sào đa dạng, 100% nguyên chất, khai thác từ nhà yến uy tín, chế biến hiện đại, giữ nguyên dinh dưỡng. Giá cả hợp lý, dịch vụ chu đáo. Yến Sào Hương Liên - Lựa chọn cho sức khỏe vàng!',
+    'intro.natural.title': 'Nhà Yến Hoàn Toàn Tự Nhiên',
+    'intro.natural.desc': 'Nhà yến là những ngôi nhà được xây dựng hoặc cải tạo để thu hút chim yến làm tổ. Chim yến là loài chim nhỏ, có bộ lông màu nâu xám, thường sinh sống ở các đảo, hang động ven biển.',
+    'intro.materials.title': 'Nguyên Liệu Cao Cấp',
+    'intro.materials.desc': '100% tổ yến nguyên chất, khai thác từ nhà yến uy tín tại Khánh Hòa. Tổ yến được chọn lọc kỹ lưỡng, đảm bảo chất lượng cao nhất. Không sử dụng chất bảo quản, hóa chất độc hại.',
+    'intro.processing.title': 'Chế Biến Hiện Đại',
+    'intro.processing.desc': 'Quy trình chế biến khép kín, đảm bảo vệ sinh an toàn thực phẩm. Sản phẩm được kiểm nghiệm chất lượng nghiêm ngặt trước khi xuất xưởng.',
+    'intro.variety.title': 'Đa Dạng Sản Phẩm',
+    'intro.variety.desc': 'Cung cấp đầy đủ các loại yến sào như: yến sào nguyên tổ, yến sào tinh chế, yến sào rút lông, yến sào vụn, yến sào chưng sẵn,...',
+    'intro.price.title': 'Giá Cả Hợp Lý',
+    'intro.price.desc': 'Giá cả cạnh tranh so với các sản phẩm yến sào trên thị trường. Cung cấp nhiều chương trình khuyến mãi hấp dẫn cho khách hàng.',
+
     // Footer
     'footer.description': 'Chuyên cung cấp các sản phẩm yến sào cao cấp, chất lượng nhất tại Việt Nam. Cam kết mang đến những sản phẩm tự nhiên, an toàn cho sức khỏe.',
     'footer.address': 'Lô 7LK39, Đ. Số 2 Đường Phong Châu, KĐT Mỹ Gia, Phường Nam Nha Trang, Khánh Hòa',
@@ -91,6 +105,20 @@ const translations = {
     'products.essence.name': 'Bird\'s Nest Essence',
     'products.essence.desc': 'Concentrated bird\'s nest essence, easy to absorb, suitable for busy people.',
     
+    // Introduction
+    'intro.title': 'About Yen Sao Huong Lien',
+    'intro.subtitle': '14 years of experience, diverse bird\'s nest products, 100% pure, sourced from reputable swiftlet houses, modern processing, preserving nutrition. Reasonable prices, thoughtful service. Yen Sao Huong Lien - The golden choice for health!',
+    'intro.natural.title': 'Completely Natural Swiftlet Houses',
+    'intro.natural.desc': 'Swiftlet houses are buildings constructed or modified to attract swiftlets to build nests. Swiftlets are small birds with brown-gray feathers, typically living on islands and coastal caves.',
+    'intro.materials.title': 'Premium Ingredients',
+    'intro.materials.desc': '100% pure bird\'s nest, sourced from reputable swiftlet houses in Khanh Hoa. Bird\'s nests are carefully selected to ensure the highest quality. No preservatives or harmful chemicals used.',
+    'intro.processing.title': 'Modern Processing',
+    'intro.processing.desc': 'Closed processing system ensuring food safety and hygiene. Products undergo strict quality testing before leaving the factory.',
+    'intro.variety.title': 'Diverse Products',
+    'intro.variety.desc': 'We provide a full range of bird\'s nest products including: whole bird\'s nest, refined bird\'s nest, cleaned bird\'s nest, bird\'s nest fragments, ready-to-eat bird\'s nest...',
+    'intro.price.title': 'Reasonable Prices',
+    'intro.price.desc': 'Competitive prices compared to other bird\'s nest products in the market. We offer many attractive promotional programs for customers.',
+
     // Reviews
     'reviews.title': 'What Customers Say',
     'reviews.subtitle': 'Authentic feedback from customers who have trusted and used our products',

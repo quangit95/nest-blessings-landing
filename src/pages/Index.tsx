@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Introduction from "@/components/Introduction";
 import Products from "@/components/Products";
 import Reviews from "@/components/Reviews";
 import Footer from "@/components/Footer";
@@ -37,6 +38,7 @@ const Index = () => {
       <div className="min-h-screen bg-background">
         <Header />
         <Hero />
+        <Introduction />
         <Products />
         <Reviews />
         <Footer />
