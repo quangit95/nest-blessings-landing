@@ -12,13 +12,11 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-brown-400 to-brown-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl" ><div className="flex items-center space-x-2">
-            <img 
-              src="src/assets/logo_hl.png" 
-              alt="Yến Sào Hương Liên" 
-              className="h-12 w-auto"
-            />
-          </div></span>
+                <span className="text-white font-bold text-xl" >
+                  <div className="flex items-center space-x-2">
+                    <img src="/src/assets/logo_hl.png" alt="Yến Sào Hương Liên" className="h-12 w-auto" />
+                  </div>
+                  </span>
               </div>
               
               <span className="text-2xl font-bold">Yến Sào Hương Liên</span>
