@@ -21,10 +21,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-brown-500 to-brown-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">YN</span>
-            </div>
-            <span className="text-xl font-bold text-brown-800">Yến Sào Hương Liên</span>
+            <img 
+              src="/lovable-uploads/71676f78-aac3-47f4-ac30-e9d19ecc4112.png" 
+              alt="Yến Sào Hương Liên" 
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Menu */}
