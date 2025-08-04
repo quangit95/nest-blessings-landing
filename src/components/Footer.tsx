@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-brown-400 to-brown-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl" >
                   <div className="flex items-center space-x-2">
-                    <img src="/src/assets/logo_hl.png" alt="Yến Sào Hương Liên" className="h-12 w-auto" />
+                    <img src="/assets/bird-nest-premium-BjYZPlCX.jpg" alt="Yến Sào Hương Liên" className="h-12 w-auto" />
                   </div>
                   </span>
               </div>
