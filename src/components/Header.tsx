@@ -22,7 +22,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/71676f78-aac3-47f4-ac30-e9d19ecc4112.png" 
+              src="src/assets/logo_hl.png" 
               alt="Yến Sào Hương Liên" 
               className="h-12 w-auto"
             />
