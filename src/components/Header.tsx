@@ -21,7 +21,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img src="/data-uploads/logo_hl.png" alt="Yến Sào Hương Liên" className="h-12 w-auto" />
+            <img src="/data-uploads/logo_hl.png" alt="Yến Sào Hương Liên" className="h-20 w-auto" />
           </div>
 
           {/* Desktop Menu */}

@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="w-12 h-12 bg-gradient-to-br from-brown-400 to-brown-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl" >
                   <div className="flex items-center space-x-2">
-                    <img src="/data-uploads/logo_hl.png" alt="Yến Sào Hương Liên" className="h-12 w-auto" />
+                    <img src="/data-uploads/logo_hl.png" alt="Yến Sào Hương Liên" className="h-20 w-auto" />
                   </div>
                   </span>
               </div>
@@ -102,13 +102,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-6 mb-4 md:mb-0">
               <a 
-                href="#" 
+                href="https://www.facebook.com/Yensaohuonglien.Official" 
                 className="text-brown-300 hover:text-white transition-colors p-2 rounded-full hover:bg-brown-700"
               >
                 <Facebook className="w-6 h-6" />
               </a>
               <a 
-                href="#" 
+                href="https://www.tiktok.com/@huonglien.official" 
                 className="text-brown-300 hover:text-white transition-colors p-2 rounded-full hover:bg-brown-700"
               >
                 <Instagram className="w-6 h-6" />
