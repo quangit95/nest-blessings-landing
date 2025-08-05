@@ -40,12 +40,8 @@ const Footer = () => {
                 <span className="text-brown-200">yensaohuongliennhatrang@gmail.com</span>
               </div>
             </div>
-          </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-6">{t('footer.quicklinks')}</h3>
-             {/* Google Maps */}
+            {/* Google Maps */}
             <div className="mt-6">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3899.1974202596434!2d109.16703007588039!3d12.234908130599727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31705d071238448b%3A0xa7dbe14ba4cc5975!2zWeG6v24gU8OgbyBIxrDGoW5nIExpw6pu!5e0!3m2!1svi!2sus!4v1754377509139!5m2!1svi!2sus"
@@ -58,6 +54,33 @@ const Footer = () => {
                 className="rounded-lg"
               />
             </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-xl font-bold mb-6">{t('footer.quicklinks')}</h3>
+            <ul className="space-y-3">
+              <li>
+                <a href="#home" className="text-brown-200 hover:text-white transition-colors">
+                  {t('nav.home')}
+                </a>
+              </li>
+              <li>
+                <a href="#introduction" className="text-brown-200 hover:text-white transition-colors">
+                  {t('nav.introduction')}
+                </a>
+              </li>
+              <li>
+                <a href="#products" className="text-brown-200 hover:text-white transition-colors">
+                  {t('nav.products')}
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-brown-200 hover:text-white transition-colors">
+                  {t('nav.contact')}
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* Support */}
@@ -105,7 +128,7 @@ const Footer = () => {
                 <Instagram className="w-6 h-6" />
               </a>
               <a 
-                href="tel:01234567890" 
+                href="#" 
                 className="text-brown-300 hover:text-white transition-colors p-2 rounded-full hover:bg-brown-700"
               >
                 <Phone className="w-6 h-6" />
