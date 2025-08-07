@@ -1,6 +1,6 @@
 import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () => {
   const { t } = useLanguage();
   
@@ -105,7 +105,7 @@ const Footer = () => {
                 <Instagram className="w-6 h-6" />
               </a>
               <a 
-                href="tel:01234567890" 
+                href="tel:0783409011" 
                 className="text-brown-300 hover:text-white transition-colors p-2 rounded-full hover:bg-brown-700"
               >
                 <Phone className="w-6 h-6" />

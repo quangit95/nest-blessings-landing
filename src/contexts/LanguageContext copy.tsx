@@ -28,15 +28,15 @@ const translations = {
     'products.title': 'Sản Phẩm Yến Sào Cao Cấp',
     'products.subtitle': 'Chúng tôi tự hào mang đến những sản phẩm yến sào chất lượng cao, được chế biến theo quy trình khép kín và đảm bảo an toàn thực phẩm.',
     'products.buynow': 'Mua Ngay',
-    'products.premium.name': 'Yến Tinh Chế Cao Cấp',
+    'products.premium.name': 'Yến Sào Cao Cấp',
     'products.premium.desc': 'Dòng yến tinh chế cao cấp nhất của Yến Sào Hương Liên, 100% sợi già được tinh tuyển từ những tổ thô cao cấp nhất.',
-    'products.soup.name': 'Yến Thô VIP',
+    'products.soup.name': 'Yến Thô',
     'products.soup.desc': 'Yến thô nguyên tổ được tuyển chọn từ những tổ yến thô ít lông, dáng tổ đẹp. Được hái từ nhà yến của Hương Liên tại Khánh Hòa.',
     'products.dried.name': 'Yến Tinh Chế',
     'products.dried.desc': 'Là những tổ yến đã được làm sạch và tinh chế, giữ nguyên giá trị dinh dưỡng.',
     'products.essence.name': 'Yến hũ chưng sẵn',
     'products.essence.desc': 'Yến hũ chưng sẵn – không chất bảo quản, không phụ gia, giữ trọn tinh chất yến nguyên chất cho sức khỏe mỗi ngày.',
-        
+    
     // Reviews
     'reviews.title': 'Khách Hàng Nói Gì',
     'reviews.subtitle': 'Những phản hồi chân thực từ khách hàng đã tin tưởng và sử dụng sản phẩm của chúng tôi',
@@ -104,7 +104,7 @@ const translations = {
     'products.dried.desc': 'Whole dried bird\'s nest, naturally preserved, suitable for cooking according to preference.',
     'products.essence.name': 'Bird\'s Nest Essence',
     'products.essence.desc': 'Concentrated bird\'s nest essence, easy to absorb, suitable for busy people.',
-
+    
     // Introduction
     'intro.title': 'About Yen Sao Huong Lien',
     'intro.subtitle': '14 years of experience, diverse bird\'s nest products, 100% pure, sourced from reputable swiftlet houses, modern processing, preserving nutrition. Reasonable prices, thoughtful service. Yen Sao Huong Lien - The golden choice for health!',

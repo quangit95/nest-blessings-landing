@@ -14,12 +14,13 @@ const Index = () => {
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Chuyên cung cấp sản phẩm yến sào cao cấp, chất lượng tại Việt Nam. Yến sào nguyên chất, tinh chất yến sào, súp yến sào truyền thống với giá tốt nhất.');
+      metaDescription.setAttribute('content', 'Yến Sào Hương Liên – Chuyên cung cấp yến sào nguyên chất, cao cấp, chất lượng từ thiên nhiên. Giao hàng toàn quốc, cam kết uy tín & an toàn.');
     }
 
     const metaKeywords = document.createElement('meta');
     metaKeywords.name = 'keywords';
-    metaKeywords.content = 'yến sào, bird nest, yến sào cao cấp, tinh chất yến sào, súp yến sào, sức khỏe, dinh dưỡng, Yến Sào Hương Liên';
+    metaKeywords.content = 'yến sào Hương Liên, yến sào Nha Trang, yến tinh chế, tổ yến nguyên chất, yến sào cao cấp, yến sào cho bà bầu, yến sào cho người già, mua yến sào uy tín, yến sào thiên nhiên, yến sào Khánh Hòa, yến thật 100%, yến sào quà biếu, yến sào chất lượng, tổ yến Hương Liên, yến sào giá tốt, yến chưng sẵn, yến sào nguyên tổ, yến Hương Liên Nha Trang, yến sào chính hãng'
+
     document.head.appendChild(metaKeywords);
 
     const metaOgTitle = document.createElement('meta');
