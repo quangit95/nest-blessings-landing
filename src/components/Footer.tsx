@@ -1,6 +1,7 @@
 import { Facebook, Instagram, Phone, Mail, MapPin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
   const { t } = useLanguage();
   
@@ -102,7 +103,7 @@ const Footer = () => {
                 href="https://www.tiktok.com/@huonglien.official" 
                 className="text-brown-300 hover:text-white transition-colors p-2 rounded-full hover:bg-brown-700"
               >
-                <Instagram className="w-6 h-6" />
+                <FontAwesomeIcon icon={faTiktok} className="w-6 h-6" />
               </a>
               <a 
                 href="tel:0783409011" 
