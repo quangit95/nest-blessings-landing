@@ -62,6 +62,51 @@ const Products = () => {
         { name: "12 hũ", price: 2300000, originalPrice: 2800000 },
         { name: "24 hũ", price: 4400000, originalPrice: 5200000 }
       ],
+    },
+    // Duplicate 4 more for 8 total products
+    {
+      id: 5,
+      nameKey: "products.premium.name",
+      descKey: "products.premium.desc",
+      image: premiumImage,
+      variants: [
+        { name: "50g", price: 2500000, originalPrice: 3000000 },
+        { name: "100g", price: 4800000, originalPrice: 5500000 },
+        { name: "200g", price: 9200000, originalPrice: 10500000 }
+      ],
+    },
+    {
+      id: 6,
+      nameKey: "products.soup.name",
+      descKey: "products.soup.desc",
+      image: soupImage,
+      variants: [
+        { name: "10g", price: 850000, originalPrice: 1000000 },
+        { name: "20g", price: 1600000, originalPrice: 1900000 },
+        { name: "50g", price: 3800000, originalPrice: 4500000 }
+      ],
+    },
+    {
+      id: 7,
+      nameKey: "products.dried.name",
+      descKey: "products.dried.desc",
+      image: driedImage,
+      variants: [
+        { name: "30g", price: 1800000, originalPrice: 2200000 },
+        { name: "50g", price: 2900000, originalPrice: 3500000 },
+        { name: "100g", price: 5600000, originalPrice: 6800000 }
+      ],
+    },
+    {
+      id: 8,
+      nameKey: "products.essence.name",
+      descKey: "products.essence.desc",
+      image: essenceImage,
+      variants: [
+        { name: "6 hũ", price: 1200000, originalPrice: 1500000 },
+        { name: "12 hũ", price: 2300000, originalPrice: 2800000 },
+        { name: "24 hũ", price: 4400000, originalPrice: 5200000 }
+      ],
     }
   ];
 
@@ -77,7 +122,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {products.map((product) => (
             <Card
               key={product.id}
