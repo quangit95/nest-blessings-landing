@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { useState } from "react";
 import premiumImage from "@/assets/TCCC.jpg";
 import soupImage from "@/assets/bird-nest-soup.jpg";
 import driedImage from "@/assets/bird-nest-dried.jpg";
@@ -14,6 +16,7 @@ import thoVIP from "@/assets/Tho-VIP.jpg";
 
 const Products = () => {
   const { t } = useLanguage();
+  const [selectedVariants, setSelectedVariants] = useState<{[key: number]: string}>({});
 
   const products = [
     {
@@ -21,65 +24,44 @@ const Products = () => {
       nameKey: "products.premium.name",
       descKey: "products.premium.desc",
       image: premiumImage,
-      price: 2500000,
-      originalPrice: 3000000,
+      variants: [
+        { name: "50g", price: 2500000, originalPrice: 3000000 },
+        { name: "100g", price: 4800000, originalPrice: 5500000 },
+        { name: "200g", price: 9200000, originalPrice: 10500000 }
+      ],
     },
     {
       id: 2,
       nameKey: "products.soup.name",
       descKey: "products.soup.desc",
       image: thoVIP,
-      price: 850000,
-      originalPrice: 1000000,
+      variants: [
+        { name: "10g", price: 850000, originalPrice: 1000000 },
+        { name: "20g", price: 1600000, originalPrice: 1900000 },
+        { name: "50g", price: 3800000, originalPrice: 4500000 }
+      ],
     },
     {
       id: 3,
       nameKey: "products.dried.name",
       descKey: "products.dried.desc",
       image: driedImage,
-      price: 1800000,
-      originalPrice: 2200000,
+      variants: [
+        { name: "30g", price: 1800000, originalPrice: 2200000 },
+        { name: "50g", price: 2900000, originalPrice: 3500000 },
+        { name: "100g", price: 5600000, originalPrice: 6800000 }
+      ],
     },
     {
       id: 4,
       nameKey: "products.essence.name",
       descKey: "products.essence.desc",
       image: essenceImage,
-      price: 1200000,
-      originalPrice: 1500000,
-    },
-    // Duplicate 4 more for 8 total products
-    {
-      id: 5,
-      nameKey: "products.premium.name",
-      descKey: "products.premium.desc",
-      image: premiumImage,
-      price: 2500000,
-      originalPrice: 3000000,
-    },
-    {
-      id: 6,
-      nameKey: "products.soup.name",
-      descKey: "products.soup.desc",
-      image: soupImage,
-      price: 850000,
-      originalPrice: 1000000,
-    },
-    {
-      id: 7,
-      nameKey: "products.dried.name",
-      descKey: "products.dried.desc",
-      image: driedImage,
-      price: 1800000,
-      originalPrice: 2200000,
-    },
-    {
-      id: 8,
-      nameKey: "products.essence.name",
-      descKey: "products.essence.desc",
-      image: essenceImage,
-      price: 1200000,
-      originalPrice: 1500000,
+      variants: [
+        { name: "6 hũ", price: 1200000, originalPrice: 1500000 },
+        { name: "12 hũ", price: 2300000, originalPrice: 2800000 },
+        { name: "24 hũ", price: 4400000, originalPrice: 5200000 }
+      ],
     }
   ];
 
@@ -110,7 +92,7 @@ const Products = () => {
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute top-4 right-4 bg-brown-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                    {t('products.bestseller', 'Bán chạy')}
+                    {t('products.bestseller')}
                   </div>
                 </div>
               </CardHeader>
@@ -123,12 +105,36 @@ const Products = () => {
                   {t(product.descKey)}
                 </CardDescription>
 
+                <div className="mb-4">
+                  <Select 
+                    value={selectedVariants[product.id] || product.variants[0].name}
+                    onValueChange={(value) => setSelectedVariants({...selectedVariants, [product.id]: value})}
+                  >
+                    <SelectTrigger className="w-full">
+                      <SelectValue placeholder={t('products.variant')} />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {product.variants.map((variant) => (
+                        <SelectItem key={variant.name} value={variant.name}>
+                          {variant.name}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
                 <div className="flex items-center space-x-2 mb-4">
                   <span className="text-2xl font-bold text-brown-700">
-                    {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.price)}
+                    {(() => {
+                      const selectedVariant = product.variants.find(v => v.name === (selectedVariants[product.id] || product.variants[0].name));
+                      return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(selectedVariant?.price || 0);
+                    })()}
                   </span>
                   <span className="text-lg text-brown-400 line-through">
-                    {new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(product.originalPrice)}
+                    {(() => {
+                      const selectedVariant = product.variants.find(v => v.name === (selectedVariants[product.id] || product.variants[0].name));
+                      return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(selectedVariant?.originalPrice || 0);
+                    })()}
                   </span>
                 </div>
               </CardContent>
