@@ -30,15 +30,22 @@ const translations = {
     'products.buynow': 'Mua Ngay',
     'products.bestseller': 'Bán chạy',
     'products.variant': 'Chọn loại',
-    'products.premium.name': 'Yến Tinh Chế Cao Cấp',
-    'products.premium.desc': 'Dòng yến tinh chế cao cấp nhất của Yến Sào Hương Liên, 100% sợi già được tinh tuyển từ những tổ thô cao cấp nhất.',
+    'products.tinhchecaocap.name': 'Yến Tinh Chế Cao Cấp',
+    'products.tinhchecaocap.desc': 'Dòng yến tinh chế cao cấp nhất của Yến Sào Hương Liên, 100% sợi già được tinh tuyển từ những tổ thô cao cấp nhất.',
     'products.soup.name': 'Yến Thô VIP',
     'products.soup.desc': 'Yến thô nguyên tổ được tuyển chọn từ những tổ yến thô ít lông, dáng tổ đẹp. Được hái từ nhà yến của Hương Liên tại Khánh Hòa.',
-    'products.dried.name': 'Yến Tinh Chế',
-    'products.dried.desc': 'Là những tổ yến đã được làm sạch và tinh chế, giữ nguyên giá trị dinh dưỡng.',
-    'products.essence.name': 'Yến hũ chưng sẵn',
-    'products.essence.desc': 'Yến hũ chưng sẵn – không chất bảo quản, không phụ gia, giữ trọn tinh chất yến nguyên chất cho sức khỏe mỗi ngày.',
-        
+    'products.yentinhche.name': 'Yến Tinh Chế',
+    'products.yentinhche.desc': 'Là những tổ yến đã được làm sạch và tinh chế, giữ nguyên giá trị dinh dưỡng.',
+    'products.yenvienbaby.name': 'Yến Viên Baby',
+    'products.yenvienbaby.desc': 'Yến viên nhỏ gọn, tiện dùng mọi lúc, giữ trọn dưỡng chất từ tổ yến.',
+    'products.yenchungtuoidongtrung.name': 'Yến Chưng Tươi - Đông Trùng',
+    'products.yenchungtuoidongtrung.desc': 'Yến chưng tươi đông trùng là sự kết hợp tinh túy giữa yến tươi nguyên chất và đông trùng, giúp bồi bổ cơ thể, tăng sức đề kháng, cải thiện chức năng phổi, thận và hỗ trợ phục hồi sinh lực một cách tự nhiên.',
+    'products.yenchungtuoigung.name': 'Yến Chưng Tươi - Gừng',
+    'products.yenchungtuoigung.desc': 'Yến chưng tươi với gừng là món bổ dưỡng giúp làm ấm cơ thể, tăng cường đề kháng và hỗ trợ tiêu hóa, đặc biệt phù hợp trong những ngày se lạnh hoặc khi cơ thể mệt mỏi.',
+    'products.chungtuoihatchia.name': 'Yến Chưng Tươi - Hạt Chia',
+    'products.chungtuoihatchia.desc': 'Yến chưng tươi với hạt chia là sự kết hợp nhẹ nhàng, bổ dưỡng giúp cung cấp chất xơ, hỗ trợ tiêu hóa, làm đẹp da và duy trì năng lượng cho cơ thể mỗi ngày.',
+    'products.chungtuoilongnhan.name': 'Yến Chưng Tươi - Long Nhãn',
+    'products.chungtuoilongnhan.desc': 'Yến chưng tươi với long nhãn là món bổ dưỡng giúp an thần, cải thiện giấc ngủ, bồi bổ khí huyết và tăng cường trí nhớ, đặc biệt phù hợp cho người hay mệt mỏi, căng thẳng.',
     // Reviews
     'reviews.title': 'Khách Hàng Nói Gì',
     'reviews.subtitle': 'Những phản hồi chân thực từ khách hàng đã tin tưởng và sử dụng sản phẩm của chúng tôi',
@@ -54,7 +61,7 @@ const translations = {
     
     // Introduction
     'intro.title': 'Về Yến Sào Hương Liên',
-    'intro.subtitle': '14 năm kinh nghiệm, sản phẩm yến sào đa dạng, 100% nguyên chất, khai thác từ nhà yến uy tín, chế biến hiện đại, giữ nguyên dinh dưỡng. Giá cả hợp lý, dịch vụ chu đáo. Yến Sào Hương Liên - Lựa chọn cho sức khỏe vàng!',
+    'intro.subtitle': 'Với hơn 15 năm đồng hành cùng sức khỏe người Việt, Hương Liên không ngừng theo đuổi những chuẩn mực khắt khe nhất về chất lượng. Từ khâu khai thác tổ yến, làm sạch, chế biến cho đến bảo quản, tất cả đều được thực hiện trong quy trình khép kín nghiêm ngặt. Chúng tôi cam kết giữ trọn sự nguyên bản, độ tinh khiết và giá trị dinh dưỡng cao nhất trong từng sợi yến.',
     'intro.natural.title': 'Nhà Yến Hoàn Toàn Tự Nhiên',
     'intro.natural.desc': 'Nhà yến là những ngôi nhà được xây dựng hoặc cải tạo để thu hút chim yến làm tổ. Chim yến là loài chim nhỏ, có bộ lông màu nâu xám, thường sinh sống ở các đảo, hang động ven biển.',
     'intro.materials.title': 'Nguyên Liệu Cao Cấp',
@@ -76,7 +83,7 @@ const translations = {
     'footer.return': 'Chính Sách Đổi Trả',
     'footer.faq': 'Câu Hỏi Thường Gặp',
     'footer.social': 'Theo Dõi Chúng Tôi',
-    'footer.copyright': '© 2024 Yến Sào Hương Liên. Tất cả quyền được bảo lưu.',
+    'footer.copyright': '© 2025 Yến Sào Hương Liên. Tất cả quyền được bảo lưu.',
     'footer.dev': 'Website được phát triển bởi Lovable'
   },
   en: {
@@ -111,7 +118,7 @@ const translations = {
 
     // Introduction
     'intro.title': 'About Yen Sao Huong Lien',
-    'intro.subtitle': '14 years of experience, diverse bird\'s nest products, 100% pure, sourced from reputable swiftlet houses, modern processing, preserving nutrition. Reasonable prices, thoughtful service. Yen Sao Huong Lien - The golden choice for health!',
+    'intro.subtitle': 'With over 15 years of dedication to the health of Vietnamese families, Hương Liên has consistently pursued the highest standards of quality. From harvesting and cleaning to processing and preservation, every step is carried out under a strict, closed-loop process. We are committed to preserving the original form, purity, and highest nutritional value in every strand of bird’s nest.',
     'intro.natural.title': 'Completely Natural Swiftlet Houses',
     'intro.natural.desc': 'Swiftlet houses are buildings constructed or modified to attract swiftlets to build nests. Swiftlets are small birds with brown-gray feathers, typically living on islands and coastal caves.',
     'intro.materials.title': 'Premium Ingredients',
@@ -146,7 +153,7 @@ const translations = {
     'footer.return': 'Return Policy',
     'footer.faq': 'FAQ',
     'footer.social': 'Follow Us',
-    'footer.copyright': '© 2024 Bird Nest. All rights reserved.',
+    'footer.copyright': '© 2025 Bird Nest. All rights reserved.',
     'footer.dev': 'Website developed by Lovable'
   }
 };

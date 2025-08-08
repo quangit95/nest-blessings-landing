@@ -3,15 +3,15 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useState } from "react";
-import premiumImage from "@/assets/TCCC.jpg";
+import tinhchecaocap from "@/assets/TCCC.jpg";
 import soupImage from "@/assets/bird-nest-soup.jpg";
-import driedImage from "@/assets/bird-nest-dried.jpg";
-import essenceImage from "@/assets/bird-nest-essence.jpg";
+import yentinhche from "@/assets/tinhcheloai1.jpg";
+import yenvienbaby from "@/assets/vienbaby.jpg";
 import thoVIP from "@/assets/Tho-VIP.jpg";
-//import premiumImage from "@/assets/TCCC.jpg";
-//import soupImage from "@/assets/bird-nest-soup.jpg";
-//import driedImage from "@/assets/bird-nest-dried.jpg";
-//import essenceImage from "@/assets/bird-nest-essence.jpg";
+import yenchungtuoidongtrung from "@/assets/Dong-Trung.jpg";
+import yenchungtuoigung from "@/assets/gung.png";
+import chungtuoihatchia from "@/assets/hatchia.png";
+import chungtuoilongnhan from "@/assets/longnhan.png";
 //import thoVIP from "@/assets/Tho-VIP.jpg";
 
 const Products = () => {
@@ -21,9 +21,9 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      nameKey: "products.premium.name",
-      descKey: "products.premium.desc",
-      image: premiumImage,
+      nameKey: "products.tinhchecaocap.name",
+      descKey: "products.tinhchecaocap.desc",
+      image: tinhchecaocap,
       variants: [
         { name: "50g", price: 2500000, originalPrice: 3000000 },
         { name: "100g", price: 4800000, originalPrice: 5500000 },
@@ -43,9 +43,9 @@ const Products = () => {
     },
     {
       id: 3,
-      nameKey: "products.dried.name",
-      descKey: "products.dried.desc",
-      image: driedImage,
+      nameKey: "products.yentinhche.name",
+      descKey: "products.yentinhche.desc",
+      image: yentinhche,
       variants: [
         { name: "30g", price: 1800000, originalPrice: 2200000 },
         { name: "50g", price: 2900000, originalPrice: 3500000 },
@@ -54,21 +54,21 @@ const Products = () => {
     },
     {
       id: 4,
-      nameKey: "products.essence.name",
-      descKey: "products.essence.desc",
-      image: essenceImage,
+      nameKey: "products.yenvienbaby.name",
+      descKey: "products.yenvienbaby.desc",
+      image: yenvienbaby,
       variants: [
-        { name: "6 hũ", price: 1200000, originalPrice: 1500000 },
-        { name: "12 hũ", price: 2300000, originalPrice: 2800000 },
-        { name: "24 hũ", price: 4400000, originalPrice: 5200000 }
+        { name: "10g", price: 1200000, originalPrice: 1500000 },
+        { name: "50g", price: 2300000, originalPrice: 2800000 },
+        { name: "100g", price: 4400000, originalPrice: 5200000 }
       ],
     },
     // Duplicate 4 more for 8 total products
     {
       id: 5,
-      nameKey: "products.premium.name",
-      descKey: "products.premium.desc",
-      image: premiumImage,
+      nameKey: "products.yenchungtuoidongtrung.name",
+      descKey: "products.yenchungtuoidongtrung.desc",
+      image: yenchungtuoidongtrung,
       variants: [
         { name: "50g", price: 2500000, originalPrice: 3000000 },
         { name: "100g", price: 4800000, originalPrice: 5500000 },
@@ -77,9 +77,9 @@ const Products = () => {
     },
     {
       id: 6,
-      nameKey: "products.soup.name",
-      descKey: "products.soup.desc",
-      image: soupImage,
+      nameKey: "products.yenchungtuoigung.name",
+      descKey: "products.yenchungtuoigung.desc",
+      image: yenchungtuoigung,
       variants: [
         { name: "10g", price: 850000, originalPrice: 1000000 },
         { name: "20g", price: 1600000, originalPrice: 1900000 },
@@ -88,9 +88,9 @@ const Products = () => {
     },
     {
       id: 7,
-      nameKey: "products.dried.name",
-      descKey: "products.dried.desc",
-      image: driedImage,
+      nameKey: "products.chungtuoihatchia.name",
+      descKey: "products.chungtuoihatchia.desc",
+      image: chungtuoihatchia,
       variants: [
         { name: "30g", price: 1800000, originalPrice: 2200000 },
         { name: "50g", price: 2900000, originalPrice: 3500000 },
@@ -99,9 +99,9 @@ const Products = () => {
     },
     {
       id: 8,
-      nameKey: "products.essence.name",
-      descKey: "products.essence.desc",
-      image: essenceImage,
+      nameKey: "products.chungtuoilongnhan.name",
+      descKey: "products.chungtuoilongnhan.desc",
+      image: chungtuoilongnhan,
       variants: [
         { name: "6 hũ", price: 1200000, originalPrice: 1500000 },
         { name: "12 hũ", price: 2300000, originalPrice: 2800000 },
