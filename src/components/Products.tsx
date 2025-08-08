@@ -169,13 +169,13 @@ const Products = () => {
                 </div>
 
                 <div className="flex items-center space-x-2 mb-4">
-                  <span className="text-2xl font-bold text-brown-700">
+                  <span className="text-sm md:text-2xl font-bold text-brown-700">
                     {(() => {
                       const selectedVariant = product.variants.find(v => v.name === (selectedVariants[product.id] || product.variants[0].name));
                       return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(selectedVariant?.price || 0);
                     })()}
                   </span>
-                  <span className="text-lg text-brown-400 line-through">
+                  <span className="text-xs md:text-lg text-brown-400 line-through">
                     {(() => {
                       const selectedVariant = product.variants.find(v => v.name === (selectedVariants[product.id] || product.variants[0].name));
                       return new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(selectedVariant?.originalPrice || 0);
