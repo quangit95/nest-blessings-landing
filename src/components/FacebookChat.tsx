@@ -48,6 +48,8 @@ const FacebookChat = () => {
         data-theme-color="#8B4513"
         data-logged-in-greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
         data-logged-out-greeting="Xin chào! Chúng tôi có thể giúp gì cho bạn?"
+        data-greeting-dialog-display="show"
+        data-greeting-dialog-delay="3"
       ></div>
     </>
   );
